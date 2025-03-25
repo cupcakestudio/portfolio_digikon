@@ -7,6 +7,7 @@ function About() {
                 <img src="/images/CV.jpg" alt="CV" />
             </div>
             <div className="about-text">
+                <h3>About me</h3>
                 <p>Here is what you get</p>
                 <div className="about-buttons">
                 <button>Read more</button>

@@ -5,6 +5,7 @@ function CreateConnection() {
     <section className="contact">
       <div className="contact-grid">
         <div className="contact-text">
+          <h3>Create a connection</h3>
           <h2>Ready to Talk?</h2>
           <p>Contact me through these channels:</p>
           <div className="contact-buttons">

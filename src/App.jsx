@@ -37,10 +37,11 @@ export default App
  */
 
 // src/App.js
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Portfolio from "./components/Portfolio";
-import About from "./components/About";
+import Hero from "./Components/Hero";
+import Services from "./Components/Services";
+import Portfolio from "./Components/Portfolio";
+import Banner from "./Components/Banner";
+import About from "./Components/About";
 import CreateConnection from "./Components/CreateConnection";
 
 
@@ -50,6 +51,7 @@ function App() {
       <Hero />
       <Services />
       <Portfolio />
+      <Banner content="I offer warmth, personality and vibrant designs"/>
       <About />
       <CreateConnection />
     </div>

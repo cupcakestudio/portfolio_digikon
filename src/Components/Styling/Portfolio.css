@@ -1,13 +1,15 @@
 .portfolio {
     text-align: center;
+    
     padding: 4rem;
-    background: #E8EAEF;
-    border-radius: 2rem;
+   background: white;
+    
   }
   .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
+    background-color: #eaefef;
   }
   .portfolio-grid img {
     border-radius: 1rem;

@@ -1,12 +1,12 @@
 
-import './Banner.css'
+import './Styling/Banner.css'
 
 function Banner({content}) {
   
 
   return (
     <>
-    <p>{content}</p>
+    <cite>{content}</cite>
     </>
   )
 }
