@@ -1,0 +1,80 @@
+/* #root {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+  
+  }
+
+  section {
+    width: 100vw; /* Gør sektionen så bred som skærmen 
+    padding: 40px 0; /* Lodret padding 
+    background: #eaefef; /* Standard baggrundsfarve 
+  }
+  .section {
+    display: flex;
+    flex-direction: column;
+    width: 100vw; /* Gør sektionen så bred som skærmen 
+    padding: 40px 0; /* Lodret padding 
+    background: #eaefef; /* Standard baggrundsfarve 
+  }
+  .section-reverse {
+    display: flex;
+   
+   
+  }
+  .container {
+    max-width: 1200px; /* Gør at indholdet ikke bliver for bredt 
+    margin: 0 auto; /* Centrerer indholdet 
+    padding: 0 20px; /* Indvendig padding 
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr ;
+    }
+    .reverse {
+      grid-area: 2/2;
+    }
+
+  .small_con {
+    grid-area: 1/1;
+  }
+  
+  .section img {
+    width: 300px;
+    border-radius: 10px;
+  }
+  
+ */
+ .section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 40px;
+  background-color: #eaefef;
+}
+
+.section.reverse {
+  flex-direction: row-reverse;
+}
+
+.content {
+  max-width: 500px;
+}
+
+.image img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: 1px solid black;
+  background: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background: black;
+  color: white;
+}

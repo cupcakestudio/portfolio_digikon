@@ -1,0 +1,10 @@
+.CTA{
+    border-radius: 2em;
+    color: pink;
+    background-color: green;    align-items: center;
+}
+
+.header > .CTA {
+    color: #eaefef;
+    background-color: pink;    align-items: center;
+}
