@@ -1,0 +1,20 @@
+.hero {
+    text-align: center;
+    padding: 4rem;
+    background: #E8EAEF;
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .hero .highlight {
+    font-style: italic;
+    color: #ff6699;
+  }
+  .hero .cta {
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: #ff6699;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+  }

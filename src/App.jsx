@@ -1,4 +1,4 @@
-import { useState } from 'react'
+/* import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -34,3 +34,26 @@ Kontakt mig igennem disse kanaler:">
 }
 
 export default App
+ */
+
+// src/App.js
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Portfolio from "./components/Portfolio";
+import About from "./components/About";
+import CreateConnection from "./Components/CreateConnection";
+
+
+function App() {
+  return (
+    <div className="app">
+      <Hero />
+      <Services />
+      <Portfolio />
+      <About />
+      <CreateConnection />
+    </div>
+  );
+}
+
+export default App;
