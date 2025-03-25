@@ -1,9 +1,11 @@
 .services {
+    margin-top: 1em;
     text-align: center;
     padding: 4rem;
     background-color: white;
   }
   .services-grid {
+    margin-top: 1em;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
