@@ -1,14 +1,16 @@
 
 import './Styling/Banner.css'
 
-function Banner({content}) {
+function Banner() {
   
 
   return (
-    <>
-    <cite>{content}</cite>
-    </>
-  )
-}
+    <section className="cite">
+    <div className="cite-grid">
+    <p>"I offer warmth, personality and vibrant designs"
+    </p>
+    </div>
+  </section>
+  )}
 
-export default Banner
+  export default Banner

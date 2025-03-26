@@ -1,7 +1,15 @@
+.cite {
+  margin-top: 1em;
+  text-align: center;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
   
-  cite {
-    font-family: "sorts Mill Goudy";
-    color: #3a3a3a;
-    background-color: #eaefef;
-  }
+}
+.cite-grid {
+  display: -moz-inline-box;
+  background-color: #eaefef;
+}
+
+p {
+  margin: 2em;
+}

@@ -36,25 +36,57 @@ Kontakt mig igennem disse kanaler:">
 export default App
  */
 
+//router redirect
+import "./App.css";
+
+import HeaderSection from "./Components/HeaderSection";
 // src/App.js
-import Hero from "./Components/Hero";
+ import Hero from "./Components/Hero";
 import Services from "./Components/Services";
 import Portfolio from "./Components/Portfolio";
 import Banner from "./Components/Banner";
 import About from "./Components/About";
-import CreateConnection from "./Components/CreateConnection";
+import CreateConnection from "./Components/CreateConnection"; 
 
 
 function App() {
   return (
-    <div className="app">
+   /*  <div className="app">
       <Hero />
       <Services />
       <Portfolio />
-      <Banner content="I offer warmth, personality and vibrant designs"/>
+      <Banner />
       <About />
       <CreateConnection />
+    </div> */
+    //test af statisk og dynmaisk routing
+ 
+    <div className="app">
+      {/* HeaderSection skal altid være synlig */}
+      <HeaderSection />
+
+      {/* De fleste sektioner vises altid på forsiden */}
+      <section id="hero">
+        <Hero />
+      </section>
+
+      <section id="services">
+        <Services />
+      </section>
+
+      <section id="portfolio">
+        <Portfolio />
+      </section>
+
+      <section id="about">
+        <About />
+      </section>
+
+      <section id="createConnection">
+        <CreateConnection />
+      </section>
     </div>
+
   );
 }
 

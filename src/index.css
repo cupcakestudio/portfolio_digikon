@@ -1,8 +1,14 @@
-:root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('.../fonts/Sorts_Mill_Goudy.tff') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 
+:root {
+  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'MyCustomFont';
   color-scheme: light dark;
   color: 3C3C3A;
   background-color: white;
@@ -60,6 +66,10 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+
+html {
+  scroll-behavior: smooth;
+}
 /* @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
