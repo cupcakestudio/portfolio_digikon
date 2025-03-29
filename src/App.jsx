@@ -48,7 +48,6 @@ import Banner from "./Components/Banner";
 import About from "./Components/About";
 import CreateConnection from "./Components/CreateConnection"; 
 
-
 function App() {
   return (
    /*  <div className="app">
@@ -76,6 +75,10 @@ function App() {
 
       <section id="portfolio">
         <Portfolio />
+      </section>
+
+      <section id="qoute">
+        <cite> hello hello inspirational qoute about me </cite>
       </section>
 
       <section id="about">

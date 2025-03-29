@@ -2,14 +2,26 @@
     margin-top: 1em;
     text-align: center;
     padding: 4rem;
-   background: white;
+   ground: white;
     
   }
+
+  .portfolio-banner{
+    display: flex;
+    flex-direction: row;
+  }
+  .portfolio-banner :first-child {
+    align-items: flex-start;
+  }
+  .portfolio-banner :last-child {
+    margin-left: auto;
+  }
   .portfolio-grid {
+    margin-top: 2em;;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    background-color: #eaefef;
+    ground-color: #eaefef;
   }
   .portfolio-grid img {
     border-radius: 1rem;
