@@ -3,10 +3,10 @@
    
    background: #EAEFEF;
     
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 3em;
   }
   .hero .highlight {
-    font-style: italic;
+   font-family: 'MyCustomFontItalic';
     color: #ff6699;
   }
   .hero .cta {
@@ -17,4 +17,9 @@
     border-radius: 2rem;
     border: none;
     cursor: pointer;
+  }
+
+  .hero .cta:hover {
+    background-color: #2A2B2E;
+
   }

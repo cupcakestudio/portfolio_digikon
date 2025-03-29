@@ -5,10 +5,23 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'MyCustomFontItalic';
+  src: url('public/fonts/Sorts_Mill_Goudy/SortsMillGoudy-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Headlinefont';
+  src: url('public/fonts/Montserrat/static/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 :root {
   
   font-family: 'MyCustomFont';
-  
   color: 3C3C3A;
   background-color: white;
 
@@ -24,13 +37,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 a {
   font-weight: 500;
   color: #ff6699;
   text-decoration: inherit;
 }
 a:hover {
-  color: #3a3a3a;
+  color: #2A2B2E;
+
 }
 
 body {
@@ -46,23 +61,27 @@ h1 {
   line-height: 1.1;
   
 }
+
 h2, h3 {
-  font-family: 'MyCustomFont';
-}
+  font-family: 'Headlinefont';
+font-weight: bold;}
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border-radius: 2em;
+  border: 2px solid ;
+  background-color: transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #28852d;
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  color:#2A2B2E ;
+  background-color:#FA8334 ;
 }
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

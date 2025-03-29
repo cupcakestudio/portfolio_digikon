@@ -30,4 +30,6 @@ ul {
     flex-direction: row;
   list-style: none;
   gap: 2em;
+  align-items: center;
+  
 }

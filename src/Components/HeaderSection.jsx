@@ -43,7 +43,7 @@ function HeaderSection() {
       <nav>
         <ul>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href=".">Ting Hua Lin</a></li>
+          <li><a href="."><p>Ting Hua Lin</p></a></li>
           <li><a href="#about">About</a></li>
           <li>
             <Link to="/contact"> {/* Kontakt sektion skal nu navigeres */}
