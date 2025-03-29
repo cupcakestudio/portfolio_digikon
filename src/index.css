@@ -1,15 +1,14 @@
 @font-face {
   font-family: 'MyCustomFont';
-  src: url('.../fonts/Sorts_Mill_Goudy.tff') format('truetype');
+  src: url('public/fonts/Sorts_Mill_Goudy/SortsMillGoudy-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
   
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-family: 'MyCustomFont';
-  color-scheme: light dark;
+  
   color: 3C3C3A;
   background-color: white;
 
@@ -20,11 +19,11 @@
 
   padding: 0rem;
 }
-* { box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 a {
   font-weight: 500;
   color: #ff6699;
@@ -45,8 +44,11 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  
 }
-
+h2, h3 {
+  font-family: 'MyCustomFont';
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;
