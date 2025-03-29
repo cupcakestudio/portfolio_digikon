@@ -1,13 +1,18 @@
 .cite {
-  margin-top: 1em;
+  margin: 1em;
+  padding: auto;
   text-align: center;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-
+  font-family: 'MyCustomFontItalic';
+  font-size:large;
   
 }
 .cite-grid {
   display: -moz-inline-box;
   background-color: #eaefef;
+}
+
+.cite p {
+  padding: 1em 0 1em 0;
 }
 
 p {

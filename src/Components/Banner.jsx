@@ -7,7 +7,7 @@ function Banner() {
   return (
     <section className="cite">
     <div className="cite-grid">
-    <p>"I offer warmth, personality and vibrant designs"
+    <p>"TING DEVELOPS PERSONALITY DRIVEN, VIBRANT DESIGNS"
     </p>
     </div>
   </section>

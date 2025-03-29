@@ -2,7 +2,7 @@
     margin-top: 1em;
     text-align: center;
     padding: 4rem;
-   ground: white;
+   background: white;
     
   }
 
@@ -11,6 +11,8 @@
     flex-direction: row;
   }
   .portfolio-banner :first-child {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
   }
   .portfolio-banner :last-child {
@@ -21,7 +23,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    ground-color: #eaefef;
+   
   }
   .portfolio-grid img {
     border-radius: 1rem;

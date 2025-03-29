@@ -78,7 +78,7 @@ function App() {
       </section>
 
       <section id="qoute">
-        <cite> hello hello inspirational qoute about me </cite>
+        <Banner content="Inspirational test here that make you get a sense of who i am"/>
       </section>
 
       <section id="about">
