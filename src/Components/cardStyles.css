@@ -1,0 +1,34 @@
+.cardContainer {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+
+    top: 0px; /*to make position sticky work*/
+}
+.cardContainer h2 {
+    align-self: center;
+    color: blue;
+}
+
+.cardContainer p {
+    color: brown;
+}
+
+.card-styles {
+    position: relative;
+    top: -10%;
+    width: 500px;
+    height: 500px;
+    background-color: orange ;
+    border-radius: 10%;
+}
+
+.card-styles .card_icon {
+    height: fit-content;
+}
+
+,.card-styles .card_text {
+    
+}

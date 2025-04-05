@@ -1,22 +1,4 @@
 .about {
-  margin-top: 1em;
-    text-align: center;
-    padding: 4rem;
-   background: #EAEFEF;
-
-  }
-  .about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 2rem;
-  }
-  .about-text {
-    text-align: left;
-  }
-  .about-image img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 1rem;
-  }
-  
+  margin-top: 50vh;
+  margin-bottom: 10vh;
+}

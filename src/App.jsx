@@ -38,19 +38,49 @@ export default App
 
 //router redirect
 import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import HeaderSection from "./Components/HeaderSection";
 // src/App.js
  import Hero from "./Components/Hero";
 import Services from "./Components/Services";
 import Portfolio from "./Components/Portfolio";
+import PortfolioSide from "./pages/PortfolioSide";
 import Banner from "./Components/Banner";
 import About from "./Components/About";
 import CreateConnection from "./Components/CreateConnection"; 
 
 function App() {
   return (
-   /*  <div className="app">
+  
+
+    <div className="app">
+     {location.pathname === "/" && <HeaderSection />}
+
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <>
+            <section id="hero"><Hero /></section>
+            <section id="services"><Services /></section>
+            <section id="portfolio"><Portfolio /></section>
+            <section id="quote"><Banner content="Inspirational text here" /></section>
+            <section id="about"><About /></section>
+            <section id="createConnection"><CreateConnection /></section>
+          </>
+        }
+      />
+      <Route path="/portfolioSide" element={<PortfolioSide />} />
+    </Routes>
+  </div>
+
+  );
+}
+
+export default App;
+
+/*  <div className="app">
       <Hero />
       <Services />
       <Portfolio />
@@ -60,11 +90,9 @@ function App() {
     </div> */
     //test af statisk og dynmaisk routing
  
-    <div className="app">
-      {/* HeaderSection skal altid være synlig */}
-      <HeaderSection />
+   
 
-      {/* De fleste sektioner vises altid på forsiden */}
+      {/* De fleste sektioner vises altid på forsiden 
       <section id="hero">
         <Hero />
       </section>
@@ -88,9 +116,4 @@ function App() {
       <section id="createConnection">
         <CreateConnection />
       </section>
-    </div>
-
-  );
-}
-
-export default App;
+    </div>*/}

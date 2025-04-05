@@ -1,22 +1,20 @@
-import "./Styling/About.css";
+import './Styling/About.css'
+import {sections} from './CVdata.jsx'
+import Card from './Card.jsx'
 function About() {
     return (
-       <section className="about">
-            <div className="about-grid">
-                <div className="about-image">
-                <img src="/images/CV.jpg" alt="CV" />
-            </div>
-            <div className="about-text">
-                <h3>ABOUT ME</h3>
-                <p>Here is what you get</p>
-                <div className="about-buttons">
-                <button>Get to know more</button>
-               
-                </div>
-            </div>
-            
-            </div>
-            </section>
-     );
+    <>
+    <div className='about'> <p>about me </p>
+    <div className='card_container'>
+        {
+            sections.map((section, index) => {
+                return <Card key={index} {...section}/>
+            })
+        }
+        </div>
+    </div>
+    </>
+
+    )      
 }
 export default About;

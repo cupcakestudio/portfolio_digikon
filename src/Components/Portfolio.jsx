@@ -1,7 +1,10 @@
 // src/components/Portfolio.js
 import Button from "./Button";
 import "./Styling/Portfolio.css";
+import { useNavigate } from "react-router-dom";
+
 function Portfolio() {
+  const navigate = useNavigate();
   return (
     <section className="portfolio">
       <div className="portfolio-banner">
@@ -9,13 +12,13 @@ function Portfolio() {
       <h3>Portfolio</h3>
       <h2>Latest Work</h2>
       </div>
-      <Button content="View More"/>
+      <button onClick={() => navigate("/portfolioSide")}>See My Portfolio</button>
       </div>
       <div className="portfolio-grid">
-        <img src="C:\Users\Cupca\Documents\Kea - Digital konceptudvikling\portfolio\src\Components\images\image1_placeholder.jpg" alt="Work 1" />
-        <img src="\images\image2_placeholder.jpg" alt="Work 2" />
-        <img src="\images\image3_placeholder.jpg" alt="Work 3" />
-        <img src="\images\image4_placeholder.jpg" alt="Work 4" />
+        <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" />
+        <img src="src/Components/images/image2_placeholder.jpg" alt="Work 2" />
+        <img src="src/Components/images/image3_placeholder.jpg" alt="Work 3" />
+        <img src="src/Components/images/image4_placeholder.jpg" alt="Work 4" />
        
       </div>
     </section>
