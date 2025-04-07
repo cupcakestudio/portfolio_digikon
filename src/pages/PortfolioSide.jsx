@@ -1,4 +1,4 @@
-import HeaderSectionAlt from "../Components/HeaderSectionAlt";
+
 import '../Components/Styling/PortfolioSidestyling.css'
 import { motion, AnimatePresence } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -52,8 +52,8 @@ function PortfolioSide() {
 
 
     return (<>
-      <HeaderSectionAlt />
-      <div>
+      
+      <div className="portfoliosite">
         <h1>Portfolio Page</h1>
         <p>Se mit arbejde her!</p>
       </div>

@@ -55,7 +55,7 @@ function App() {
   
 
     <div className="app">
-     {location.pathname === "/" && <HeaderSection />}
+     <HeaderSection/>
 
     <Routes>
       <Route
