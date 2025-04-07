@@ -1,11 +1,15 @@
 import HeaderSectionAlt from "../Components/HeaderSectionAlt";
 import '../Components/Styling/PortfolioSidestyling.css'
+import { motion, AnimatePresence } from 'framer-motion';
 
 import React, { useState } from 'react';
 
 
 
 function PortfolioSide() {
+/*bladr igennem projecterne med pile og gennem useState til at holde styr på hvilket projekt der vises*/ 
+
+  /* den udfoldede sektion */
   const [visMere, setVisMere] = useState(false);
 
   const toggleVisMere = () => {
@@ -34,15 +38,21 @@ function PortfolioSide() {
       </div>
       {/* visible container only if btn read more is cliked */}
       {visMere && (
-        <div className="readMore_container">
-          <p>
-            Why do we use it? It is a long established fact that a reader will be distracted...
-          </p>
-        </div>
+        <motion.div
+        className="readMore_container"
+        initial={{ height: 0, opacity: 0 }}
+        animate={{ height: 'auto', opacity: 1 }}
+        exit={{ height: 0, opacity: 0 }}
+        transition={{ duration: 0.4 }}
+      >
+        <p>
+          Why do we use it? It is a long established fact that a reader will be distracted...
+        </p>
+      </motion.div>
       )}
 
 
-      <div className="label"><p>Other projects...</p></div> 
+      <div className="label"><h2>Other projects...</h2></div> 
       <div className="caroussel_showcase">
        
               <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" />
