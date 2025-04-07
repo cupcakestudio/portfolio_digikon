@@ -1,6 +1,6 @@
 
 // src/components/Header.js
-// import "./Styling/headerSection.css";
+ import "./Styling/headerSectionAlt.css";
 import { Link } from "react-router-dom";
 import Button from "./Button"
 

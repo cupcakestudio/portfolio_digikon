@@ -2,10 +2,11 @@
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: sticky;
 
     top: 0px; /*to make position sticky work*/
+
 }
 .cardContainer h2 {
     align-self: center;
@@ -29,6 +30,6 @@
     height: fit-content;
 }
 
-,.card-styles .card_text {
+.card-styles .card_text {
     
 }

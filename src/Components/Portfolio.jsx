@@ -9,9 +9,9 @@ function Portfolio() {
     <section className="portfolio">
       <div className="portfolio-banner">
         <div className="portfolio-headlines">
-      <h3>Portfolio</h3>
-      <h2>Latest Work</h2>
-      </div>
+          <h3>Portfolio</h3>
+          <h2>Latest Work</h2>
+        </div>
       <button onClick={() => navigate("/portfolioSide")}>See My Portfolio</button>
       </div>
       <div className="portfolio-grid">
