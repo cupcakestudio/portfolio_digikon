@@ -3,7 +3,7 @@ import '../Components/Styling/PortfolioSidestyling.css'
 import { motion, AnimatePresence } from 'framer-motion';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
-
+import {_imghvr-zoom-in} from '../imagehover.css-master'
 import React, { useState } from 'react';
 
 const cases = [
@@ -111,15 +111,23 @@ function PortfolioSide() {
         <button onClick={nextCase}>
           <FontAwesomeIcon icon={faArrowRight} /> {/* Right arrow */}
         </button>
-      </div>
+      </div> 
       <AnimatePresence>
-        {visMere && (
-          <motion.div
-            className="readMore_container"
-            initial={{ height: 0, opacity: 0 }}
+      <motion.div className='readMore_container'
+       initial={{ height: 0, opacity: 0 }}
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.4 }}
+            transition={{ duration: 0.4 }}>
+
+        <div className='readMore_text'>
+       
+        {visMere && (
+          <motion.div
+            className="readMore_container_content"
+          /*   initial={{ height: 0, opacity: 0 }}
+            animate={{ height: 'auto', opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.4 }} */
           >
 
             <h3>{currentCase.title}</h3>
@@ -128,25 +136,40 @@ function PortfolioSide() {
             </p>
             </motion.div>
         )}
-      </AnimatePresence>
+      
 
       {/* visible container only if btn read more is cliked */}
       {visMere && currentCase.processdescription && (
         <motion.div
-        className="readMore_container"
-        initial={{ height: 0, opacity: 0 }}
+        className="readMore_container_process"
+        /* initial={{ height: 0, opacity: 0 }}
         animate={{ height: 'auto', opacity: 1 }}
         exit={{ height: 0, opacity: 0 }}
-        transition={{ duration: 0.4 }}
+        transition={{ duration: 0.4 }} */
         
       >
         <h3>Proces:</h3>
         <p>
          {currentCase.processdescription}
-        </p><img></img>
+        </p>
       </motion.div>
+      )}  </div>
+      {visMere && (
+      <div
+        className="readMore_img_container"
+       /*  initial={{ height: 0, opacity: 0 }}
+        animate={{ height: 'auto', opacity: 1 }}
+        exit={{ height: 0, opacity: 0 }}
+        transition={{ duration: 0.4 }} */
+        
+      >
+        <img src={currentCase.image}></img>
+      </div>
       )}
-
+      </motion.div>
+      
+    </AnimatePresence>
+     
 
       <div className="label"><h2>Other projects...</h2></div> 
       <div className="caroussel_showcase">
