@@ -4,15 +4,11 @@ import Card from './Card.jsx'
 function About() {
     return (
     <>
-    <div className='about'> <p>about me </p>
-    <div className='card_container'>
-        {
-            sections.map((section, index) => {
-                return <Card key={index} {...section}/>
-            })
-        }
-        </div>
-    </div>
+    <section className='cv_section'>
+        <div className='cv_container'>
+            <p>hello</p></div>
+    </section>
+    
     </>
 
     )      

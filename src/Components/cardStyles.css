@@ -20,14 +20,16 @@
 .card-styles {
     position: relative;
     top: -10%;
+
     width: 500px;
     height: auto;
-    background-color: orange ;
+    background-color: #ff6699;
     border-radius: 10%;
 }
 
 .card-styles .card_icon {
     height: fit-content;
+    margin-top: 10px;
 }
 
 .card-styles .card_text {

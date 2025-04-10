@@ -8,30 +8,7 @@ import React, { useState } from 'react';
 import {cases} from '../Components/CVdata'
 
 function PortfolioSide() {
-/*bladr igennem projecterne med pile og gennem useState til at holde styr på hvilket projekt der vises 
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [direction, setDirection] = useState(0); // ➡️ For glide-animation
 
-  const nextCase = () => {
-    setDirection(1);
-    setCurrentIndex((prev) => (prev + 1) % cases.length);
-    setVisMere(false); // reset read more on next
-  };
-
-  const prevCase = () => {
-    setDirection(-1);
-    setCurrentIndex((prev) => (prev - 1 + cases.length) % cases.length);
-    setVisMere(false);
-  
-  };
-
-  const currentCase = cases[currentIndex];*/
-/* den udfoldede sektion
-  const [visMere, setVisMere] = useState(false);
-
-  const toggleVisMere = () => {
-    setVisMere(!visMere);
-  }; */
 
   /*udfold case index state*/
   const [openIndex, setOpenIndex] = useState(null);
