@@ -49,6 +49,7 @@ import PortfolioSide from "./pages/PortfolioSide";
 import Banner from "./Components/Banner";
 import About from "./Components/About";
 import CreateConnection from "./Components/CreateConnection"; 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 function App() {
   return (
@@ -65,7 +66,6 @@ function App() {
             <section id="hero"><Hero /></section>
             <section id="services"><Services /></section>
             <section id="portfolio"><Portfolio /></section>
-            <section id="quote"><Banner content="Inspirational text here" /></section>
             <section id="about"><About /></section>
             <section id="createConnection"><CreateConnection /></section>
           </>

@@ -1,3 +1,6 @@
+
+
+
 export const sections=[
     {title: 'About me', content: 'A passionate developer who loves creating intuitive UI/UX experiences.'},
     {title: "Experience", content: "Worked 2+ years at a software company specializing in healthcare journaling"},
