@@ -1,4 +1,4 @@
-.portfoliosite h1 h2 {
+.portfoliosite > h1, .portfoliosite > h2 {
     margin-top: 10vh;
 }
 .case_container {
@@ -27,17 +27,44 @@
    
     scroll-behavior: smooth;
     background-color: #eaefef;
-   
+  
   }
   .caroussel_showcase img {
     border-radius: 1rem;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);object-fit: cover;
+
   }
-  .caroussel_showcase img:hover {
-    
-    background-color: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  .project_img {
+    width: fit-content;
+    height: fit-content;
+  }
+  .project_img:hover img{
+     filter: blur(5px); 
+     filter: brightness(0.5);
+ 
+  }
+
+  .overlay {
+    position: absolute;
+   
+    background-color: rgba(0, 0, 0, 0.7); /* Black overlay */
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease;
   }
   
+  .project_img .text > p {
+    color: pink;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .image-container:hover .overlay {
+    opacity: 1; /* Show the overlay with text */
+  }
   .carousel-nav
   {margin-top: 2vh;display: flex;
     align-items: center;
@@ -73,3 +100,160 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+
+
+  /*timeline css */
+  .timeline_container {
+    padding: 4rem 2rem;
+    background-color: #f5f5f5;
+  }
+  
+  .timeline {
+    position: relative;
+    margin: 3rem auto;
+    padding: 2rem 0;
+    width: 90%;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #ccc;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+  }
+  
+  .timeline_item {
+    padding: 1rem 2rem;
+    position: relative;
+    width: 50%;
+    margin-bottom: 20px;
+  
+
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+  }
+  
+  .timeline_item::before {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #ff6699;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  .timeline_item.left {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timeline_item.right {
+    left: 50%;
+    text-align: left;
+  }
+  
+  .timeline_item.right::before {
+    left: -13px;
+  }
+  
+  .timeline_item .content {
+    background: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .timeline_item img {
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+  }
+  .readMore_section {
+    overflow: hidden;
+    background-color: #fefefe;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-left: 4px solid #ff6699;
+    border-radius: 0 1rem 1rem 0;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+  }
+  
+
+  /*date styling */
+  .timeline_date {
+  position: absolute;
+  top: 0;
+  font-family: 'Headlinefont';
+  font-size: 1rem;
+  background-color: #ff6699;
+  color: #eaefef;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  z-index: 2;
+}
+.timeline_date > p {
+ margin: 0px;
+ width: 100px;
+
+}
+.timeline_date.left {
+  right: calc(100% + 30px); /* Date floats to the left side */
+  text-align: right;
+}
+
+.timeline_date.right {
+  left: calc(100% + 30px); /* Date floats to the right side */
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .timeline::after {
+    left: 8px; /* move the timeline line to the left edge */
+  }
+
+  .timeline_item {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .timeline_item.left,
+  .timeline_item.right {
+    left: 0;
+    text-align: left;
+  }
+
+  .timeline_item::before {
+    left: 0;
+    top: 0.5rem;
+    right: auto;
+  }
+
+  .timeline_date {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0.5rem;
+    transform: none;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+  }
+
+  .timeline_date.left,
+  .timeline_date.right {
+    left: 0;
+    right: 0;
+    text-align: left;
+  }
+}
