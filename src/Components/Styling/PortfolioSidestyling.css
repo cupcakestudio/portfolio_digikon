@@ -115,7 +115,9 @@
     width: 90%;
   }
   
+  /* Lodret streg i midten */
   .timeline::after {
+    z-index:0;
     content: '';
     position: absolute;
     width: 4px;
@@ -126,15 +128,14 @@
     margin-left: -2px;
   }
   
+  /* ITEM */
   .timeline_item {
     padding: 1rem 2rem;
     position: relative;
     width: 50%;
-    margin-bottom: 20px;
-  
 
-  padding-bottom: 2rem;
-  margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
   }
   
   .timeline_item::before {
@@ -149,7 +150,7 @@
     border-radius: 50%;
     z-index: 1;
   }
-
+  
   .timeline_item.left {
     left: 0;
     text-align: right;
@@ -168,7 +169,7 @@
     background: white;
     padding: 1rem;
     border-radius: 1rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
   .timeline_item img {
@@ -176,6 +177,8 @@
     margin-top: 1rem;
     border-radius: 0.5rem;
   }
+  
+  /* Læs mere sektion */
   .readMore_section {
     overflow: hidden;
     background-color: #fefefe;
@@ -183,36 +186,78 @@
     padding: 1rem;
     border-left: 4px solid #ff6699;
     border-radius: 0 1rem 1rem 0;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
   }
   
-
-  /*date styling */
+  /* Dato */
   .timeline_date {
-  position: absolute;
-  top: 0;
-  font-family: 'Headlinefont';
-  font-size: 1rem;
-  background-color: #ff6699;
-  color: #eaefef;
-  padding: 0.5rem 1rem;
-  border-radius: 1rem;
-  z-index: 2;
-}
-.timeline_date > p {
- margin: 0px;
- width: 100px;
-
-}
+    position: absolute;
+    top: 0;
+    font-family: 'Headlinefont', sans-serif;
+    font-size: 1rem;
+    background-color: #ff6699;
+    color: #eaefef;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    z-index: 2;
+    max-width: 120px;
+    word-wrap: break-word;
+  }
+  .timeline_date p {
+    margin: 0;
+  }
+/* === FIKS: Datoer på MODSAT side af indhold === */
 .timeline_date.left {
-  right: calc(100% + 30px); /* Date floats to the left side */
-  text-align: right;
+  left: calc(100% + 20px); /* vises til højre for boksen */
+  right: auto;
+  text-align: left;
 }
 
 .timeline_date.right {
-  left: calc(100% + 30px); /* Date floats to the right side */
-  text-align: left;
+  right: calc(100% + 20px); /* vises til venstre for boksen */
+  left: auto;
+  text-align: right;
 }
+  .timeline_date.center {
+    left: 50%;
+    transform: translateX(-50%);
+    top: -40px;
+    background-color: #333;
+  }
+  
+  /* Månedslinje label */
+  .timeline_month-label {
+    text-align: center;
+    margin: 3rem auto 2rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #444;
+    position: relative;
+    z-index:3;
+    background-color: orange;
+    border-radius: 1rem;
+    backdrop-filter: blur(5px);
+    max-width: fit-content;
+  }
+  .timeline_month-label > p{
+    align-self: baseline ;
+    margin: 0;
+    padding: 1rem;
+    font-size: x-large;
+    
+  }
+
+  .timeline_month-label::after {
+    content: '';
+    display: block;
+    height: 1px;
+    background: #ccc;
+    margin-top: 0.5rem;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
 
 @media (max-width: 768px) {
   .timeline::after {
@@ -256,4 +301,24 @@
     right: 0;
     text-align: left;
   }
+}
+.timeline_item.center {
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  width: auto;
+  padding: 0;
+  margin-bottom: 4rem;
+}
+
+.timeline_date.center {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+  top: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-weight: bold;
 }
