@@ -6,10 +6,13 @@ import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
 //import {_imghvr-zoom-in} from '../imagehover.css-master'
 import React, { useState } from 'react';
 import {cases} from '../Components/CVdata'
+import { useEffect } from 'react';
 
 function PortfolioSide() {
 
-
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scroll til top
+  }, []);
   /*udfold case index state*/
   const [openIndex, setOpenIndex] = useState(null);
 
@@ -39,8 +42,6 @@ function PortfolioSide() {
     return (<>
     <div className="timeline"> {/*Today*/}
             <motion.div
-            
-            
           >
             <div className="timeline_date center">
               <p>I dag</p>
@@ -67,9 +68,10 @@ function PortfolioSide() {
                   <div key={index} className={`timeline_item ${side}`} >
                     {/* DATO */}
                     <motion.div className={`timeline_date ${side}`}  initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}>
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5 }}>
                       <p>{caseItem.date}</p>
+                     
                     </motion.div>
 
                     {/* INDHOLD */}
@@ -77,6 +79,7 @@ function PortfolioSide() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}>
                       <h3>{caseItem.title}</h3>
+                      <p className='case_client'>{caseItem.client}</p>
                       <p>{caseItem.description}</p>
                       {caseItem.image && (
                         <img src={caseItem.image} alt={`Billede af ${caseItem.title}`} />

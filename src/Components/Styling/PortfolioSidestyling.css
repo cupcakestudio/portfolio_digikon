@@ -170,6 +170,7 @@
     padding: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
   }
   
   .timeline_item img {
@@ -258,7 +259,10 @@
     margin-right: auto;
   }
   
-
+.case_client {
+  background-color: orange;
+  max-width: fit-content;
+}
 @media (max-width: 768px) {
   .timeline::after {
     left: 8px; /* move the timeline line to the left edge */
