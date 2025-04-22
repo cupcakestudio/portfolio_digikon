@@ -1,16 +1,17 @@
 .hero {
   display: flex;
   align-items: center; /* Vertically center the items */
-  justify-content: space-between; /* Ensure space between the image and text */
+  justify-content: center; /* Ensure space between the image and text */
   height: 100vh;
   padding-top:1em;
   background-color: #eaefef;
+  background-image: url('src/Components/images/image3_placeholder.jpg'); /* brug dit billede her */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      position: relative;
 }
 
-.hero-img {
-  max-width:33%; /* Adjust size as needed */
-  object-fit: cover; /* Ensures the image covers the space without distortion */
-}
 
 .hero-content {
   max-width: 55%; /* Ensures the text doesn’t take up too much space */
@@ -51,3 +52,22 @@
   html {
     scroll-behavior: smooth;
   }
+
+  @media (max-width: 500px) {
+    .hero {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+    .hero-img{
+      visibility: hidden;
+    }
+  
+    .hero-section::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.4); /* for bedre læsbarhed */
+      z-index: 0;
+    }
+    }

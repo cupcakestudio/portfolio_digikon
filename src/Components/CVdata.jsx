@@ -40,4 +40,14 @@ export const  cases = [
     processdescription: "Vi har i en lille team af 2-3 mennesker udført et interview. Som forarbejde har jeg udviklet en interviewguide, og derefter fik jeg selv lov til at blive interviewet. Efter interviewet, skulle vi i teamet, finde frem til hvilke pain-points der kunne addreseres og opportunity spaces man kunne optimere på, i et service blue-print map. For derefter at udvikle og storyboarde en future user journey med konceptet indarbejdet.",
     image: "src/Components/images/image3_placeholder.jpg",
   },
+  {
+    id: 3,
+    date: "08. April '25",
+    title: "Case: ",
+    client: "",
+    description: "",
+    extradescription:"",
+    processdescription: "",
+    image: "src/Components/images/image3_placeholder.jpg",
+  },
 ];

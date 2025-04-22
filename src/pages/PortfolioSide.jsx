@@ -48,77 +48,77 @@ function PortfolioSide() {
             </div>
           </motion.div>
 
-          {/*Map for måned*/}
           {Object.entries(groupCases).reverse().map(([monthLabel, monthCases], monthIndex) => (
-            <React.Fragment key={monthLabel}>
-              {/*måned label}*/}
-              <motion.div
-              className="timeline_month-label"
-              initial={{ opacity: 0, y: 20 }}
+  <React.Fragment key={monthLabel}>
+    {/*måned label*/}
+    <motion.div
+      className="timeline_month-label"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}>
+      <p>{monthLabel.charAt(0).toUpperCase() + monthLabel.slice(1)}</p>
+    </motion.div>
+
+    {/* MAP CASES i ASCENDING DATO ORDER */}
+    {monthCases.slice().reverse().map((caseItem, index) => {
+      const totalIndex = cases.length - 1 - (monthCases.length * monthIndex + index); // for left/right alignment
+      const side = totalIndex % 2 === 0 ? 'left' : 'right';
+
+      return (
+        <div key={index} className={`timeline_item ${side}`} >
+          {/* DATO */}
+          <motion.div className={`timeline_date ${side}`} initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}>
+            <p>{caseItem.date}</p>
+          </motion.div>
+
+          {/* INDHOLD */}
+          <motion.div className="content" initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}>
-                <p>{monthLabel.charAt(0).toUpperCase() + monthLabel.slice(1)}</p>
-              </motion.div>
-              {/* MAP CASES */}
-              {monthCases.map((caseItem, index) => {
-                const totalIndex = cases.length - 1 - (monthCases.length * monthIndex + index); // for left/right alignment
-                const side = totalIndex % 2 === 0 ? 'left' : 'right';
+            <h3>{caseItem.title}</h3>
+            <p className='case_client'>{caseItem.client}</p>
+            <p>{caseItem.description}</p>
+            {caseItem.image && (
+              <img src={caseItem.image} alt={`Billede af ${caseItem.title}`} />
+            )}
 
-                return (
-                  <div key={index} className={`timeline_item ${side}`} >
-                    {/* DATO */}
-                    <motion.div className={`timeline_date ${side}`}  initial={{ opacity: 0, y: 20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{ duration: 0.5 }}>
-                      <p>{caseItem.date}</p>
-                     
-                    </motion.div>
+            <button onClick={() => toggleVisMere(caseItem.id || index)}>
+              {openIndex === (caseItem.id || index) ? 'Læs mindre' : 'Læs mere'}
+            </button>
 
-                    {/* INDHOLD */}
-                    <motion.div className="content"  initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}>
-                      <h3>{caseItem.title}</h3>
-                      <p className='case_client'>{caseItem.client}</p>
-                      <p>{caseItem.description}</p>
-                      {caseItem.image && (
-                        <img src={caseItem.image} alt={`Billede af ${caseItem.title}`} />
-                      )}
+            <AnimatePresence>
+              {openIndex === (caseItem.id || index) && (
+                <motion.div
+                  className="readMore_section"
+                  initial={{ height: 0, opacity: 0 }}
+                  animate={{ height: 'auto', opacity: 1 }}
+                  exit={{ height: 0, opacity: 0 }}
+                  transition={{ duration: 0.4 }}
+                >
+                  {caseItem.extradescription && (
+                    <>
+                      <h4>Mere info:</h4>
+                      <p>{caseItem.extradescription}</p>
+                    </>
+                  )}
+                  {caseItem.processdescription && (
+                    <>
+                      <h4>Proces:</h4>
+                      <p>{caseItem.processdescription}</p>
+                    </>
+                  )}
+                </motion.div>
+              )}
+            </AnimatePresence>
+          </motion.div>
+        </div>
+      );
+    })}
+  </React.Fragment>
+))}
 
-                      <button onClick={() => toggleVisMere(caseItem.id || index)}>
-                        {openIndex === (caseItem.id || index) ? 'Læs mindre' : 'Læs mere'}
-                      </button>
-
-                      <AnimatePresence>
-                        {openIndex === (caseItem.id || index) && (
-                          <motion.div
-                            className="readMore_section"
-                            initial={{ height: 0, opacity: 0 }}
-                            animate={{ height: 'auto', opacity: 1 }}
-                            exit={{ height: 0, opacity: 0 }}
-                            transition={{ duration: 0.4 }}
-                          >
-                            {caseItem.extradescription && (
-                              <>
-                                <h4>Mere info:</h4>
-                                <p>{caseItem.extradescription}</p>
-                              </>
-                            )}
-                            {caseItem.processdescription && (
-                              <>
-                                <h4>Proces:</h4>
-                                <p>{caseItem.processdescription}</p>
-                              </>
-                            )}
-                          </motion.div>
-                        )}
-                      </AnimatePresence>
-                    </motion.div>
-                  </div>
-                );
-              })}
-            </React.Fragment>
-          ))}
       </div>
     </>
   );

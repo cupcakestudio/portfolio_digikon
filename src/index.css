@@ -20,7 +20,6 @@
 
 
 :root {
-  
   font-family: 'MyCustomFont';
   color: 3C3C3A;
   background-color: white;
@@ -90,15 +89,25 @@ button:focus-visible {
 html {
   scroll-behavior: smooth;
 }
-/* @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
-} */
+@media (max-width: 500px) {
+  
+:root {
+  font-family: 'MyCustomFont';
+  color: 3C3C3A;
+  background-color: white;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  padding: 0rem;
+
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+}

@@ -4,7 +4,7 @@ import Button from "./Button";
 function Hero() {
   return (
     <section className="hero">
-  <img src="src/Components/images/image3_placeholder.jpg" alt="Hero splash img" className="hero-img" />
+ 
   <div className="hero-content">
     <h1>Pushing the Boundaries of <span className='highlight'>Visual Communication</span></h1>
     <h3>Designs for small businesses</h3>

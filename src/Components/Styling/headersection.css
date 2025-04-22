@@ -36,3 +36,14 @@ ul {
 li > a  p {
   font-size: larger;
 }
+
+@media (max-width: 500px) {
+  
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  }
