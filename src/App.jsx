@@ -50,8 +50,29 @@ import Banner from "./Components/Banner";
 import About from "./Components/About";
 import CreateConnection from "./Components/CreateConnection"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { useEffect } from "react";
 
 function App() {
+
+    useEffect(() => {const sections = document.querySelectorAll("section");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        //observer.unobserve(entry.target); // Fjern dette hvis du vil animere hver gang de kommer i view
+      } else {
+        entry.target.classList.remove("visible");
+      }
+    });
+  }, { threshold: 0.01 });
+
+  sections.forEach(section => {
+    observer.observe(section);
+  });})
+  
+
+
   return (
   
 
