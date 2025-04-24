@@ -1,22 +1,35 @@
 .cv_section{
   margin: 0;
   margin-top: 5vh;
-
+  background-color: #eaefef;
 
 }
 
 .cv_container
 {
-   background-image: url('src/Components/images/night_ocean_vector.jpg');
+  /*  background-image: url('src/Components/images/night_ocean_vector.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  width: fit-content;
-  background-attachment: fixed;
+  width: fit-content; background-attachment: fixed;
   width: auto;
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto;
+  margin-right: auto;*/
+
 }
+
+#MeCV{   
+  
+  mask-image: url(https://assets.codepen.io/1101822/circles-mask-whole.svg);
+  mask-repeat: no-repeat;
+  mask-position: 30% center; /* juster denne værdi efter behov */
+  mask-size: contain; /* eller try 'cover' for fuld dækning */
+max-width: 100%;
+display: block;
+aspect-ratio: 1;
+object-fit:contain;
+ }
+
 
 .features_wrapper{
   grid-column-gap: 4rem;
@@ -37,6 +50,8 @@
   position: sticky;
   top: 110px;
   margin-bottom: 10vh;
+  
+
 }
 
 .features_right {   
