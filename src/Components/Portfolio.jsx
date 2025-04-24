@@ -2,8 +2,10 @@
 import Button from "./Button";
 import "./Styling/Portfolio.css";
 import { useNavigate } from "react-router-dom";
-
+import { cases } from "./CVdata";
 function Portfolio() {
+
+ 
   const navigate = useNavigate();
   return (
     <section className="portfolio">
@@ -14,11 +16,67 @@ function Portfolio() {
         </div>
       <button onClick={() => navigate("/portfolioSide")}>See My Portfolio</button>
       </div>
-      <div className="portfolio-grid">
-        <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" />
-        <img src="src/Components/images/image2_placeholder.jpg" alt="Work 2" />
-        <img src="src/Components/images/image3_placeholder.jpg" alt="Work 3" />
-        <img src="src/Components/images/image4_placeholder.jpg" alt="Work 4" />
+   {/*    
+        <div className="portfolioCard">
+          <div className="face face1">
+            <div className="portfolioCardContent">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+          <div className="face face2">
+          {/* <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" /> 
+
+          </div>
+        </div>
+        <div className="portfolioCard">
+          <div className="face face1">
+            <div className="portfolioCardContent">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+          <div className="face face2">
+          <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" />
+          </div>
+        </div>
+        <div className="portfolioCard">
+          <div className="face face1">
+            <div className="portfolioCardContent">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+          <div className="face face2">
+          <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" />
+          </div>
+        </div>
+        <div className="portfolioCard">
+          <div className="face face1">
+            <div className="portfolioCardContent">
+            <h2>Lorem Ipsum</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+          </div>
+          <div className="face face2">
+          <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" />
+          </div>
+        </div>
+         */}
+        
+        <div className="portfolio-grid">{cases.map((item, index) => (
+            <div key={index} className="portfolioCard">
+              <div className="face face1">
+                <div className="portfolioCardContent">
+                  <h2>{item.title}</h2>
+                  <p>{item.text}</p>
+                </div>
+              </div>
+              <div className="face face2">
+              <h2 className="face face2 title">{item.title}</h2>
+              </div>
+    </div>
+  ))}
        
       </div>
     </section>

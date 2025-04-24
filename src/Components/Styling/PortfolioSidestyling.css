@@ -62,39 +62,7 @@
     font-weight: bold;
     text-align: center;
   }
-  .image-container:hover .overlay {
-    opacity: 1; /* Show the overlay with text */
-  }
-  .carousel-nav
-  {margin-top: 2vh;display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;}
-  
-  
-  .pager {
-    display: flex;
-    gap: 5px;
-  }
-  
-  .pager-button {
-    width: 8px;
-    height: 5px;
-    border-radius: 100%;
-    background-color: #eaefef; /* Inactive state */
-    border: black 1px solid;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s;
-  }
-  
-  .pager-button.active {
-    background-color: #ff6699; /* Active state */
-    transform: scale(1.2);
-  }
-  
-  .pager-button:hover {
-    background-color: orange; /* Hover state */
-  }
+ 
   
   .readMore_container {
     display: grid;

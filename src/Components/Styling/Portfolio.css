@@ -31,7 +31,95 @@
     border-radius: 1rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
+/*portfolio card styling */
+  .portfolioCard{
+    position: relative;
+    width: 350px;
+    height: 400px;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 15px 60px rgba(0,0,0, .5);
+    border-radius: 15px;
+  }
   
+  .portfolioCard .face{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portfolioCard  .face.face1{
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .portfolioCard  .face.face1 h2{
+    margin: 0;
+    padding: 0;
+  }
+  
+  .portfolioCard  .face.face1 .portfolioCardContent{
+    font-size:1.2em;
+    margin:0;
+    padding:0 0 1em 0;
+    font-weight:500;
+  }
+  
+  .portfolioCard .face.face2{
+    background: #111;
+    transition: 0.5s;
+  }
+  
+  .portfolioCard:nth-child(1) .face.face2{
+    background: linear-gradient(45deg, #3503ad, #f7308c);
+    border-radius: 15px;
+  }
+  
+  .portfolioCard :nth-child(2) .face.face2{
+    background: linear-gradient(45deg, #ccff00, #09afff);
+    border-radius: 15px;
+  }
+  
+  .portfolioCard :nth-child(3) .face.face2{
+    background: linear-gradient(45deg, #e91e63, #ffeb3b);
+    border-radius: 15px;
+  }
+  
+  .portfolioCard:hover .face.face2{
+    height: 60px;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .portfolioCard .face.face2:before{
+    content:'';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 50%;
+    height: 100%;
+    background: rgba(38, 197, 155, 0.074);
+    border-radius: 15px 0 0 15px;
+  }
+  
+  .portfolioCard  .face.face2 h2{
+    margin: 0;
+    padding: 0;
+    font-size: 3rem;
+    color: #fff;
+    transition: 0.5s;
+    text-shadow: 0 2px 5px rgba(0,0,0, .2);
+  }
+  
+  .portfolioCard:hover .face.face2 h2{
+    font-size: 2em;
+  }
+
+
   @media (max-width: 500px){
 
     .portfolio-grid {
