@@ -7,10 +7,10 @@ function Hero() {
  
   <div className="hero-content">
     <h1>Pushing the Boundaries of <span className='highlight'>Visual Communication</span></h1>
-    <h3>Designs for small businesses</h3>
+    <h3>Designs der taler til dig</h3>
     <div className="button-container">
-    <button className="cta">Work with Me</button>
-    <a href="#services" id="scrollBtnHero">Check Me Out</a>
+    <button className="cta">Skab kontakt</button>
+    <a href="#services" id="scrollBtnHero">Tag et kig</a>
 
     </div>
   </div>

@@ -78,7 +78,7 @@ function PortfolioSide() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5 }}>
             <h3>{caseItem.title}</h3>
-            <p className='case_client'>{caseItem.client}</p>
+            {caseItem.client ? <p className='case_client'>Kunde: {caseItem.client}</p> : <p></p>}
             <p>{caseItem.description}</p>
             {caseItem.image && (
               <img src={caseItem.image} alt={`Billede af ${caseItem.title}`} />

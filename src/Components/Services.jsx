@@ -10,11 +10,11 @@ function Services() {
             </div>
             <div className="service-box">
               <h3>Advertising</h3>
-              <p>Creating impactful advertising materials</p>
+              <p>Creating advertising materials that impacts</p>
             </div>
             <div className="service-box">
               <h3>Content</h3>
-              <p>Producing engaging content for websites</p>
+              <p>Producing engaging and intuitive content for websites</p>
             </div>
           </div>
         </section>

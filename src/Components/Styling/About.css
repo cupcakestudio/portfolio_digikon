@@ -42,7 +42,7 @@ object-fit:contain;
 }
 
 .features_left {
-  color:aliceblue;
+  color:rgb(0, 0, 0);
   flex-direction: column;
   align-items: center;
   max-width: 600px;

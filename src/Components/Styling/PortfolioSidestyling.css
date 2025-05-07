@@ -229,6 +229,8 @@
   
 .case_client {
   background-color: orange;
+  border-radius: 5%;
+  padding: 2%;
   max-width: fit-content;
 }
 @media (max-width: 768px) {

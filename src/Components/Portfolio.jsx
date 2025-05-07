@@ -68,8 +68,11 @@ function Portfolio() {
             <div key={index} className="portfolioCard">
               <div className="face face1">
                 <div className="portfolioCardContent">
-                  <h2>{item.title}</h2>
-                  <p>{item.text}</p>
+                  
+                  <p>{item.client}</p> 
+                  <p>{item.blurp}</p> 
+                  <button>Læs mere
+            </button>
                 </div>
               </div>
               <div className="face face2">
