@@ -76,7 +76,7 @@ function Portfolio() {
                 </div>
               </div>
               <div className="face face2">
-              <h2 className="face face2 title">{item.title}</h2>
+              <h3 className="face face2 title">{item.title}</h3>
               </div>
     </div>
   ))}

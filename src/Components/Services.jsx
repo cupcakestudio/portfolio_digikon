@@ -6,15 +6,15 @@ function Services() {
           <div className="services-grid">
             <div className="service-box">
               <h3>Branding</h3>
-              <p>Creating visual identities for brands</p>
+              <p>Udvikling af visuelle identiteter, der udtrykker dine værdier og styrker din virksomhed</p>
             </div>
             <div className="service-box">
-              <h3>Advertising</h3>
-              <p>Creating advertising materials that impacts</p>
+              <h3>Produktion</h3>
+              <p>Produktion af målrettet materiale, der skaber synlighed og effekt</p>
             </div>
             <div className="service-box">
-              <h3>Content</h3>
-              <p>Producing engaging and intuitive content for websites</p>
+              <h3>Indholdskreation</h3>
+              <p>Der produceres engagerende indhold, som tiltrækker flere ind i din verden</p>
             </div>
           </div>
         </section>
