@@ -1,111 +1,13 @@
-/* 
 
 
-.header {
-  
-  
-}
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-ul {
-  display: flex;
-    flex-direction: row;
-  list-style: none;
-  gap: 2em;
-  align-items: center; 
-}
-
-li > a  p {
-  font-size: larger;
-}
-
-@media (max-width: 500px) {
-  
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  } */
-
-  /*ny css styling til header fra chat */
-
-  /* Reset  {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Header styling 
-.header {
-  background-color: #f5f9fa;
-  position: sticky;
-  top: 0;
-  z-index: 999;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-}
-
-.navbar {
-  max-width: 1200px;
-  margin: auto;
-  padding: 1rem 1.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: sans-serif;
-  color: #eaefef; /* pink 
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.nav-links {
-  display: flex;
-  gap: 1.5rem;
-  align-items: center;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #e91e63;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #ad1457;
-}
-
-.cta-btn {
-  background-color: #e91e63;
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  transition: background 0.3s ease;
-}
-
-.cta-btn:hover {
-  background-color: #d81b60;
-}
-
-
-*/#root {
+#root {
   max-width: 0 auto;
   margin: 0 auto;
   padding: 0;
   text-align: center;
 }
 .header {
-  width:100%;
+  max-width:100%;
   background-color: #edf3f3;
   padding: 1rem 2rem;
 
@@ -158,27 +60,30 @@ li > a  p {
   border: none;
 }
 
-.bar {
-  width: 20px;
-  height: 2px;
-  background-color: #e91e63;
+.burger .mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+.mobile-menu.open {
+  display:none
 }
 
 
+.mobile-menu .cta {
+  margin-top: 0.5rem;
+}
 @media (max-width: 500px) {
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    right: 0;
-    background-color: #f5f9fa;
-    flex-direction: column;
-    width: 100%;
-    padding: 1rem 0;
-    display: none;
-  }
 
-  .nav-links.open {
-    display: flex;
+  .nav-left,
+  .nav-right {
+    display: none;
   }
 
   .burger {
@@ -188,4 +93,28 @@ li > a  p {
   .cta-btn {
     margin-top: 1rem;
   }
+
+
+ .mobile-menu.open{background-color: #ecf0f1;
+padding: 1.5rem 0;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 1rem;}
+
+ .mobile-menu.open li {
+    text-decoration: none;
+    list-style: none;
 }
+
+
+  }
+.mobile-menu a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  color: black;
+  border-bottom: 1px solid #eee;
+} 
+
+
+
