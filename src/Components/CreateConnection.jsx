@@ -5,12 +5,12 @@ function CreateConnection() {
     <section className="contact">
       <div className="contact-grid">
         <div className="contact-text">
-          <h3>Create a connection</h3>
-          <h2>Ready to Talk?</h2>
-          <p>Contact me through these channels:</p>
+          <h3>Skab kontakt</h3>
+          <h2>Klar til en snak?</h2>
+          <p>Kontakt mig gennem disse kanaler:</p>
           <div className="contact-buttons">
-            <button>Email</button>
-            <button>Chat</button>
+            <button><a href="mailto:cupcakestudious.com">Email</a>
+            </button>
           </div>
         </div>
         <div className="contact-image">

@@ -21,7 +21,7 @@
 
 :root {
   font-family: 'MyCustomFont';
-  color: 3C3C3A;
+  color: #3C3C3A;
   background-color: white;
 
   font-synthesis: none;
@@ -103,7 +103,7 @@ section.visible {
   
 :root {
   font-family: 'MyCustomFont';
-  color: 3C3C3A;
+  color: #3C3C3A;
   background-color: white;
 
   font-synthesis: none;

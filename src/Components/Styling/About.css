@@ -55,7 +55,7 @@ object-fit:contain;
 }
 
 .features_right {   
-  grid-row-gap: 200px;
+  grid-row-gap: 100px;
   flex-direction: column;
   width: 400px;
   display: flex;
@@ -73,6 +73,7 @@ object-fit:contain;
   .features_right {
     width: 100%;
     height: auto;
+    grid-row-gap: 10px;
   }
 
   .features_left {

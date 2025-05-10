@@ -51,6 +51,7 @@ import About from "./Components/About";
 import CreateConnection from "./Components/CreateConnection"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { useEffect } from "react";
+import Footer from "./Components/Footer";
 
 function App() {
 
@@ -71,7 +72,17 @@ function App() {
     observer.observe(section);
   });})
   
-
+  useEffect(() => {
+    const id = location.hash.replace('#', '');
+    if (id) {
+      const el = document.getElementById(id);
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: 'smooth' });
+        }, 100);
+      }
+    }
+  }, [location]);
 
   return (
   
@@ -94,6 +105,7 @@ function App() {
       />
       <Route path="/portfolioSide" element={<PortfolioSide />} />
     </Routes>
+    <Footer/>
   </div>
 
   );
