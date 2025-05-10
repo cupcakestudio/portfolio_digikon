@@ -1,4 +1,4 @@
-#root {
+/* #root {
   max-width: 0 auto;
   margin: 0 auto;
   padding: 0;
@@ -46,4 +46,108 @@ li > a  p {
     box-sizing: border-box;
   }
   
+  } */
+
+  /*ny css styling til header fra chat */
+
+  /* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.header {
+  background-color: #f5f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: sans-serif;
+  color: #eaefef; /* pink */
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #e91e63;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ad1457;
+}
+
+.cta-btn {
+  background-color: #e91e63;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: background 0.3s ease;
+}
+
+.cta-btn:hover {
+  background-color: #d81b60;
+}
+
+/* Burger menu (mobile) */
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+  background: none;
+  border: none;
+}
+
+.bar {
+  width: 20px;
+  height: 2px;
+  background-color: #e91e63;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: #f5f9fa;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem 0;
+    display: none;
   }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+
+  .cta-btn {
+    margin-top: 1rem;
+  }
+}
