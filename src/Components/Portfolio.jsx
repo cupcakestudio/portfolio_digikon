@@ -16,53 +16,7 @@ function Portfolio() {
         </div>
       <button onClick={() => navigate("/portfolioSide")}>See My Portfolio</button>
       </div>
-   {/*    
-        <div className="portfolioCard">
-          <div className="face face1">
-            <div className="portfolioCardContent">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-          </div>
-          <div className="face face2">
-          {/* <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" /> 
-
-          </div>
-        </div>
-        <div className="portfolioCard">
-          <div className="face face1">
-            <div className="portfolioCardContent">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-          </div>
-          <div className="face face2">
-          <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" />
-          </div>
-        </div>
-        <div className="portfolioCard">
-          <div className="face face1">
-            <div className="portfolioCardContent">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-          </div>
-          <div className="face face2">
-          <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" />
-          </div>
-        </div>
-        <div className="portfolioCard">
-          <div className="face face1">
-            <div className="portfolioCardContent">
-            <h2>Lorem Ipsum</h2>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-            </div>
-          </div>
-          <div className="face face2">
-          <img src="src/Components/images/image1_placeholder.jpg" alt="Work 1" />
-          </div>
-        </div>
-         */}
+  
         
         <div className="portfolio-grid">{cases.map((item, index) => (
             <div key={index} className="portfolioCard">
@@ -71,7 +25,7 @@ function Portfolio() {
                   
                   <p>{item.client}</p> 
                   <p>{item.blurp}</p> 
-                  <button>Læs mere
+                <button onClick={() => navigate(`/portfolioSide#${item.id}`)}>Læs mere
             </button>
                 </div>
               </div>
