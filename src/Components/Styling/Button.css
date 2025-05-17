@@ -1,7 +1,7 @@
 .CTA{
     border-radius: 2em;
-    color: pink;
-    background-color: green;    align-items: center;
+    color: #FF6699;
+    align-items: center;
 }
 
 .header > .CTA {

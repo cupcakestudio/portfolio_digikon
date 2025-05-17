@@ -1,4 +1,4 @@
-import './Button.css'
+import './Styling/Button.css'
 
 function Button({content}) {
   

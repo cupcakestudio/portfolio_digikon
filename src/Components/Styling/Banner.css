@@ -1,0 +1,23 @@
+.cite {
+  padding: auto;
+  text-align: center;
+  font-family: 'MyCustomFontItalic';
+  font-size:large;
+  
+}
+.cite-grid {
+  display: -moz-inline-box;
+  background-color: #eaefef;
+}
+
+.cite p {
+  padding: 1em 0 1em 0;
+}
+
+p {
+  margin: 2em;
+}
+
+section.about p, section.contact p {
+  margin-left: 0;
+}
