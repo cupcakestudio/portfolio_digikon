@@ -105,30 +105,14 @@ const prevImage = (id, images) => {
             <h3>{caseItem.title}</h3>
             {caseItem.client ? <p className='case_client'>Kunde: {caseItem.client}</p> : <p></p>}
             <p>{caseItem.description}</p>
-            {/* {caseItem.image && (
-              <img src={caseItem.image} alt={`Billede af ${caseItem.title}`} />
-            )} 
-
-              {caseItem.images && caseItem.images.length > 0 && (
-                <div className="slideshow">
-                  <img
-                    src={caseItem.images[currentImageIndex].src}
-                    alt={`Billede ${currentImageIndex + 1} af ${caseItem.title}`}
-                  />
-                  <p className="caption">{caseItem.images[currentImageIndex].caption}</p>
-                  <div className="slideshow-controls">
-                    <button onClick={prevImage}>Forrige</button>
-                    <button onClick={nextImage}>Næste</button>
-                  </div>
-                </div>
-              )}*/}
 
               {caseItem.images && caseItem.images.length > 0 && (
               <div className="slideshow">
+                <div className='slideshow_container'>
                 <img
                   src={caseItem.images[imageIndexes[caseItem.id] || 0].src}
                   alt={`Billede af ${caseItem.title}`}
-                />
+                /></div>
                 <p>{caseItem.images[imageIndexes[caseItem.id] || 0].caption}</p>
                 <div className="slideshow-controls">
                   <button onClick={() => prevImage(caseItem.id, caseItem.images)}>Forrige</button>
@@ -137,7 +121,7 @@ const prevImage = (id, images) => {
               </div>
 )}
 
-            <button onClick={() => toggleVisMere(caseItem.id || index)}>
+            <button id="readMore" onClick={() => toggleVisMere(caseItem.id || index)}>
               {openIndex === (caseItem.id || index) ? 'Læs mindre' : 'Læs mere'}
             </button>
 
@@ -153,7 +137,7 @@ const prevImage = (id, images) => {
                 >
                   {caseItem.extradescription && (
                     <>
-                      <h4>Mere info:</h4>
+                      <h4>Om konceptet:</h4>
                       <p>{caseItem.extradescription}</p>
                     </>
                   )}

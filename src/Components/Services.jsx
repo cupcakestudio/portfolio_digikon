@@ -2,7 +2,7 @@ import "./Styling/Services.css";
 function Services() {
     return (
         <section className="services">
-          <h2>Campaigns that Resonate with Audiences</h2>
+          <h2>Hvad kan du forvente?</h2>
           <div className="services-grid">
             <div className="service-box">
               <h3>Branding</h3>

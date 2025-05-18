@@ -14,7 +14,7 @@ function CreateConnection() {
           </div>
         </div>
         <div className="contact-image">
-          <img src="/images/contact-chair.jpg" alt="Chair" />
+          <img src="src/Components/images/chair3.png" alt="Chair" />
         </div>
       </div>
     </section>
