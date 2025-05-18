@@ -1,5 +1,5 @@
 .hero {
-   mask-image: url('src/Components/images/MaskGroup1test.svg');
+   mask-image: url('/images/MaskGroup1test.svg');
   mask-repeat: no-repeat;
   mask-position: center; /* juster denne værdi efter behov */
   mask-size: contain; /* eller try 'cover' for fuld dækning */
@@ -9,7 +9,7 @@
   height: 100vh;
   padding-top:1em;
   background-color: #eaefef;
-  background-image: url('src/Components/images/meCV.svg'); /* brug dit billede her */
+  background-image: url('/images/meCV.svg'); /* brug dit billede her */
       background-size: contain;
       background-position: center;
       color: #eaefef;
