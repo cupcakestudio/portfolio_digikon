@@ -13,7 +13,7 @@ function About() {
                 <h2>"TING UDVIKLER OG DESIGNER MED KREATIVITET, PERSONLIGHED OG ØJE FOR DETALJER"
                 </h2>
                 <button onClick={() => navigate('/pages/about')}>Lad mig vide mere</button>
-                <img id='MeCV'src="src/Components/images/me2.jpg"></img>
+                <img id='MeCV'src="src/Components/images/meCV.svg"></img>
                 </div>
                 <div className='features_right'>
                     {sections.map((section, index) => {

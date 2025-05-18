@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <radialGradient id="grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="black"></stop>
+      <stop offset="100%" stop-color="white"></stop>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#grad)"></rect>
+  <circle cx="200" cy="150" r="150" fill="black" fill-opacity="0.8"></circle>
+  <circle cx="500" cy="300" r="200" fill="black" fill-opacity="0.7"></circle>
+  <circle cx="300" cy="450" r="130" fill="black" fill-opacity="0.9"></circle>
+</svg>

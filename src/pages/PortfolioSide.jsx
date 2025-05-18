@@ -43,6 +43,24 @@ function PortfolioSide() {
   }
   const groupCases = groupCasesByMonth(cases);
 
+  //slideshow states centralt - hver caseItem.id har én useState sat, men er gemt pr. id indeks
+ const [imageIndexes, setImageIndexes] = useState({});
+
+const nextImage = (id, images) => {
+  setImageIndexes((prev) => ({
+    ...prev,
+    [id]: prev[id] === images.length - 1 ? 0 : (prev[id] || 0) + 1
+  }));
+};
+
+const prevImage = (id, images) => {
+  setImageIndexes((prev) => ({
+    ...prev,
+    [id]: prev[id] === 0 || prev[id] == null ? images.length - 1 : prev[id] - 1
+  }));
+};
+
+
 
     return (<>
     <div className="timeline"> {/*Today*/}
@@ -87,11 +105,23 @@ function PortfolioSide() {
             <h3>{caseItem.title}</h3>
             {caseItem.client ? <p className='case_client'>Kunde: {caseItem.client}</p> : <p></p>}
             <p>{caseItem.description}</p>
-            {caseItem.image && (
-              <img src={caseItem.image} alt={`Billede af ${caseItem.title}`} />
-            )}
 
-            <button onClick={() => toggleVisMere(caseItem.id || index)}>
+              {caseItem.images && caseItem.images.length > 0 && (
+              <div className="slideshow">
+                <div className='slideshow_container'>
+                <img
+                  src={caseItem.images[imageIndexes[caseItem.id] || 0].src}
+                  alt={`Billede af ${caseItem.title}`}
+                /></div>
+                <p>{caseItem.images[imageIndexes[caseItem.id] || 0].caption}</p>
+                <div className="slideshow-controls">
+                  <button onClick={() => prevImage(caseItem.id, caseItem.images)}>Forrige</button>
+                  <button onClick={() => nextImage(caseItem.id, caseItem.images)}>Næste</button>
+                </div>
+              </div>
+)}
+
+            <button id="readMore" onClick={() => toggleVisMere(caseItem.id || index)}>
               {openIndex === (caseItem.id || index) ? 'Læs mindre' : 'Læs mere'}
             </button>
 
@@ -107,7 +137,7 @@ function PortfolioSide() {
                 >
                   {caseItem.extradescription && (
                     <>
-                      <h4>Mere info:</h4>
+                      <h4>Om konceptet:</h4>
                       <p>{caseItem.extradescription}</p>
                     </>
                   )}
@@ -120,7 +150,11 @@ function PortfolioSide() {
                 </motion.div>
               )}
             </AnimatePresence>
-          </motion.div>
+
+
+</motion.div>
+
+
         </div>
       );
     })}

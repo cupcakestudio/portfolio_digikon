@@ -5,25 +5,13 @@
 
 }
 
-.cv_container
-{
-  /*  background-image: url('src/Components/images/night_ocean_vector.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: fit-content; background-attachment: fixed;
-  width: auto;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;*/
 
-}
 
 #MeCV{   
   
-  mask-image: url(https://assets.codepen.io/1101822/circles-mask-whole.svg);
+  mask-image: url('src/Components/images/Mask group.png');
   mask-repeat: no-repeat;
   mask-position: 30% center; /* juster denne værdi efter behov */
-  mask-size: contain; /* eller try 'cover' for fuld dækning */
 max-width: 100%;
 display: block;
 aspect-ratio: 1;
@@ -61,6 +49,9 @@ object-fit:contain;
   display: flex;
   position: relative;
   margin-bottom: 10vh;
+}
+.features_left { 
+  gap: 2rem;
 }
 
 @media (max-width: 500px) {

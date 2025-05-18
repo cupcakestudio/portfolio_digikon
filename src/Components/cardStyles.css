@@ -51,11 +51,9 @@
 }
 
 .card-styles .card_icon {
-   background-color: blanchedalmond;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 100%;
-    height: 16rem;
+ 
+    color: #FA8334; 
+    font-size: 5em;
 }
 
 

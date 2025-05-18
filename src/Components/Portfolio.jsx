@@ -29,8 +29,15 @@ function Portfolio() {
             </button>
                 </div>
               </div>
-              <div className="face face2">
-              <h3 className="face face2 title">{item.title}</h3>
+              <div className="face face2" style={{
+          backgroundImage: `url(${item.image})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+        
+     
+        }}>
+              <div className="face face2 blur"></div>
+              <p>{item.title}</p>
               </div>
     </div>
   ))}

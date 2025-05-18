@@ -9,12 +9,13 @@ function CreateConnection() {
           <h2>Klar til en snak?</h2>
           <p>Kontakt mig gennem disse kanaler:</p>
           <div className="contact-buttons">
-            <button><a href="mailto:cupcakestudious.com">Email</a>
+            <button><a href="mailto:cupcakestudious.com">Email</a></button>
+            <button><a href="https://www.linkedin.com/in/ting-hua-lin-21b919198/">Linkedin</a>
             </button>
           </div>
         </div>
         <div className="contact-image">
-          <img src="/images/contact-chair.jpg" alt="Chair" />
+          <img src="src/Components/images/chair3.png" alt="Chair" />
         </div>
       </div>
     </section>
