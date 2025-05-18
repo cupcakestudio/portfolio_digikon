@@ -6,7 +6,7 @@ function Hero() {
     <section className="hero">
  
   <div className="hero-content">
-    <h1>Pushing the Boundaries of <span className='highlight'>Visual Communication</span></h1>
+    <h2>Pushing the Boundaries of <span className='highlight'>Visual Communication</span></h2>
     <h3>Designs der taler til dig</h3>
     <div className="button-container">
     <button className="cta">Skab kontakt</button>

@@ -233,6 +233,30 @@
   padding: 2%;
   max-width: fit-content;
 }
+
+
+
+/*slideshow img styling*/
+.slideshow {
+  position: relative;
+  text-align: center;
+}
+.slideshow img {
+  max-width: 100%;
+  height: auto;
+}
+.slideshow-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+.caption {
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+
 @media (max-width: 768px) {
   .timeline::after {
     left: 8px; /* move the timeline line to the left edge */

@@ -20,6 +20,7 @@ export const  cases = [
     extradescription: "Jeg har med en gruppe, arbejdede på at besvare dette problem: 'Hvordan kan vi skabe et innovativt digitalt koncept, der gør Tivoli mere tilgængelig og fremmer inklusion for synshandicappede gæster, så de får den fulde oplevelse af Tivolis magiske have?' udviklede dette koncept om en lydbaseret guide i Tivoli parken, for at sikre gæster med synshadicap, kan få en ligeså magisk oplevelse af parken på lige med med seende gæster. Appen, baseret på information om parkens forskellige zoner og miljøer, bliver beskrevet af en guide, indtalt af AI-stemmer fra EllevenLabs. ",
     processdescription: "Der blev arbejdet meget med grundlæggende kvalitative interviews for at få indsigter i synshadicappets hverdag.",
     image: "src/Components/images/image1_placeholder.jpg",
+    more_img: "src/Components/images/"
   },
   {
     id: 1,
@@ -42,6 +43,7 @@ export const  cases = [
     extradescription:"Hertil skulle jeg i fællesskab med mine medstuderende i et mindre team, udforme og storyboarde hvordan en future user journey for en god morgen oplevelse, vil se ud. Vi kom frem til at man kunne udvikle en skærn at opsætte i vinduet, og derved vågne op til ens ønsket morgenladskab, ved at indstille på temperaturen, lysfølsomheden, og audio. Med inspiration fra Philips hue.",
     processdescription: "Vi har i en lille team af 2-3 mennesker udført et interview. Som forarbejde har jeg udviklet en interviewguide, og derefter fik jeg selv lov til at blive interviewet. Efter interviewet, skulle vi i teamet, finde frem til hvilke pain-points der kunne addreseres og opportunity spaces man kunne optimere på, i et service blue-print map. For derefter at udvikle og storyboarde en future user journey med konceptet indarbejdet.",
     image: "src/Components/images/image3_placeholder.jpg",
+    images: [{src:"src/Components/images/Casecontent/case_girltalk/merch_product.jpg"}, {src:"src/Components/images/Casecontent/case_girltalk/merch_product_open.jpg"}]
   },
   {
     id: 3,
@@ -53,5 +55,6 @@ export const  cases = [
     extradescription:"",
     processdescription: "",
     image: "src/Components/images/image3_placeholder.jpg",
+    images: [{src:"src/Components/images/Casecontent/case_girltalk/merch_product.jpg"}, {src:"src/Components/images/Casecontent/case_girltalk/merch_product_open.jpg"}]
   },
 ];

@@ -1,15 +1,20 @@
 .hero {
+   mask-image: url('src/Components/images/MaskGroup1test.svg');
+  mask-repeat: no-repeat;
+  mask-position: center; /* juster denne værdi efter behov */
+  mask-size: contain; /* eller try 'cover' for fuld dækning */
   display: flex;
   align-items: center; /* Vertically center the items */
   justify-content: center; /* Ensure space between the image and text */
   height: 100vh;
   padding-top:1em;
   background-color: #eaefef;
-  background-image: url('src/Components/images/image3_placeholder.jpg'); /* brug dit billede her */
-      background-size: cover;
+  background-image: url('src/Components/images/meCV.svg'); /* brug dit billede her */
+      background-size: contain;
       background-position: center;
-      color: white;
+      color: #eaefef;
       position: relative;
+      background-repeat: no-repeat;
 }
 
 
@@ -36,6 +41,7 @@
     border-radius: 2rem;
     border: none;
     cursor: pointer;
+    z-index: 2;
   }
 
   .hero .cta:hover {
