@@ -10,7 +10,7 @@ function About() {
         <div className='cv_container' alt="freepik.com">
             <div className='features_wrapper'>
                 <div className='features_left'>
-                <h2>"TING UDVIKLER OG DESIGNER MED KREATIVITET, PERSONLIGHED OG ØJE FOR DETALJER"
+                <h2>TING UDVIKLER OG DESIGNER MED KREATIVITET, PERSONLIGHED OG ØJE FOR DETALJER
                 </h2>
                 <button onClick={() => navigate('/pages/about')}>Lad mig vide mere</button>
                 <img id='MeCV'src="/images/meCV.svg"></img>
