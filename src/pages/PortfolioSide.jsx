@@ -138,12 +138,16 @@ const prevImage = (id, images) => {
                   {caseItem.extradescription && (
                     <>
                       <h4>Om konceptet:</h4>
+                      <br/>
+                      <br/>
                       <p>{caseItem.extradescription}</p>
                     </>
                   )}
                   {caseItem.processdescription && (
                     <>
                       <h4>Proces:</h4>
+                    <br/>
+                    <br/>
                       <p>{caseItem.processdescription}</p>
                     </>
                   )}
