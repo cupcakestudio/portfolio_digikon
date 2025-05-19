@@ -3,7 +3,7 @@
     text-align: center;
     padding: 4rem;
    background: white;
-    
+    overflow-x: hidden;
   }
 
   .portfolio-banner{
@@ -23,9 +23,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
-    overflow:hidden;
+    overflow-x: scroll;
     scroll-behavior: smooth;
-   
+   scrollbar-width: none;
   }
   .portfolio-grid img {
     border-radius: 1rem;

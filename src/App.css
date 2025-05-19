@@ -1,14 +1,12 @@
 #root {
-  max-width: 1920px;
+  max-width:100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
   box-sizing: border-box;
 }
 
-#splash {
-  
-}
+
 .cta_container {
   display: flex;
   align-items: center;
@@ -19,13 +17,6 @@
   
 }
 
-#tagBox {
-  text-align: left;
-}
 .card {
   padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }

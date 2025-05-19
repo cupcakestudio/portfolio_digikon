@@ -10,10 +10,9 @@ function About() {
         <div className='cv_container' alt="freepik.com">
             <div className='features_wrapper'>
                 <div className='features_left'>
-                <h2>"TING UDVIKLER OG DESIGNER MED KREATIVITET, PERSONLIGHED OG ØJE FOR DETALJER"
+                <h2>TING UDVIKLER OG DESIGNER MED KREATIVITET, PERSONLIGHED OG ØJE FOR DETALJER
                 </h2>
-                <button onClick={() => navigate('/pages/about')}>Lad mig vide mere</button>
-                <img id='MeCV'src="/images/meCV.svg"></img>
+                <img id='MeCV'src="/images/Ting_Hua_Lin_CV_2025.png"></img>
                 </div>
                 <div className='features_right'>
                     {sections.map((section, index) => {

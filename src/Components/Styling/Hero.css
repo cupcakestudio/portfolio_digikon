@@ -1,27 +1,72 @@
-.hero {
-   mask-image: url('/images/MaskGroup1test.svg');
-  mask-repeat: no-repeat;
-  mask-position: center; /* juster denne værdi efter behov */
-  mask-size: contain; /* eller try 'cover' for fuld dækning */
+ .hero {
+ 
   display: flex;
   align-items: center; /* Vertically center the items */
-  justify-content: center; /* Ensure space between the image and text */
+  justify-content: center; /* Ensure space between the image and text*/ 
   height: 100vh;
   padding-top:1em;
   background-color: #eaefef;
-  background-image: url('/images/meCV.svg'); /* brug dit billede her */
-      background-size: contain;
-      background-position: center;
-      color: #eaefef;
-      position: relative;
-      background-repeat: no-repeat;
+
 }
 
 
 .hero-content {
   max-width: 55%; /* Ensures the text doesn’t take up too much space */
   padding: 2em; /* Add some space between image and text */
+  
+}
+.image {
+  position: absolute;
+  width: 12rem; /* svarer til w-48 */
+  height: 12rem;
+}
 
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-mask-image: url('/images/Design_uden_navn-removebg-preview.png');
+  mask-image: url('/images/Design_uden_navn-removebg-preview.png');
+  -webkit-mask-size: cover;
+  mask-size: 25rem;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
+
+.image-1 {
+  top: 10%;
+  left: 20%;
+}
+
+.image-2 {
+  top: 15%;
+  right: 20%;
+ 
+}
+.image-2 > img {
+  object-fit: contain;
+}
+.image-3 {
+  bottom: 10%;
+  right: 50%;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-family: serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .hero-content h1 {text-align: justify;}
@@ -65,10 +110,24 @@
       flex-direction: column;
       height: 100vh;
     }
-    .hero-img{
-      visibility: hidden;
+    
+.image img {
+  mask-size: 25rem;
+}
+    .image-1 {
+     position: static;
     }
-  
+
+  .image-2 {
+    position: absolute;
+    bottom: -5px;
+    left: -30px;
+    opacity: 0.2;
+    transform: scale(1.5);
+  }
+  .image-3 {
+    display: none;
+  }
     .hero-section::before {
       content: '';
       position: absolute;
@@ -76,4 +135,4 @@
       background-color: rgba(0, 0, 0, 0.4); /* for bedre læsbarhed */
       z-index: 0;
     }
-    }
+    } 

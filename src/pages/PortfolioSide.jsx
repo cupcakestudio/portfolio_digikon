@@ -113,6 +113,7 @@ const prevImage = (id, images) => {
                   src={caseItem.images[imageIndexes[caseItem.id] || 0].src}
                   alt={`Billede af ${caseItem.title}`}
                 /></div>
+                <br></br>
                 <p>{caseItem.images[imageIndexes[caseItem.id] || 0].caption}</p>
                 <div className="slideshow-controls">
                   <button onClick={() => prevImage(caseItem.id, caseItem.images)}>Forrige</button>
@@ -138,12 +139,17 @@ const prevImage = (id, images) => {
                   {caseItem.extradescription && (
                     <>
                       <h4>Om konceptet:</h4>
+                      <br/>
+                      <br/>
                       <p>{caseItem.extradescription}</p>
                     </>
-                  )}
+                  )}<br/>
                   {caseItem.processdescription && (
                     <>
                       <h4>Proces:</h4>
+                    
+                    <br/>
+                    <br/>
                       <p>{caseItem.processdescription}</p>
                     </>
                   )}
