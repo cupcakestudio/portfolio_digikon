@@ -6,3 +6,11 @@
     justify-content: center;
     place-items: center;
     border-bottom: #888 1px solid;}
+    @media (max-width: 500px) {
+       .footer {
+
+         display: flex;
+         flex-direction: column
+        ;
+       }
+    }
