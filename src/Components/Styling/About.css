@@ -8,10 +8,7 @@
 
 
 #MeCV{   
-  
-  mask-image: url('/images/Mask group.png');
-  mask-repeat: no-repeat;
-  mask-position: 30% center; /* juster denne værdi efter behov */
+ 
 max-width: 100%;
 display: block;
 aspect-ratio: 1;

@@ -5,7 +5,7 @@ import { icon } from "@fortawesome/fontawesome-svg-core";
 
 
 export const sections=[
-    {title: 'Om mig', content: 'A passionate developer who loves creating intuitive UI/UX experiences.', icon: <FontAwesomeIcon icon={faUserTie}/>},
+    {title: 'Om mig', content: 'En passioneret udvikler, der elsker at skabe intuitive UI/UX-oplevelser.', icon: <FontAwesomeIcon icon={faUserTie}/>},
     {title: "Erfaring", content: "Som uddannet multimediedesigner, har jeg haft muligheden for at udfolde mine evner indenfor UX og research, gennem et års fuldtidsarbejde hos XMedicus ApS.", icon: <FontAwesomeIcon icon={faBriefcase}/>},
     {title: "Projekter", content: "Opbygget fantastiske brugerrelevante koncepter fra idé til kundepitching.", icon: <FontAwesomeIcon icon={faListCheck}/>},
     {title: "Kompetencer", content: "Brugerundersøgelser er i højsæder, da jeg gerne vil fokusere på hvad brugeren har behov for. Med det formål udvikler jeg til at imødekomme disse behov.", icon: <FontAwesomeIcon icon={faUserGraduate}/> },
