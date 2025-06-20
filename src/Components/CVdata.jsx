@@ -61,4 +61,15 @@ export const  cases = [
     image: "/images/Casecontent/case_girltalk/presentation.jpg",
     images: [{src:"/images/Casecontent/case_girltalk/merch_product.jpg",caption:"Brochure med konceptbeskrivelse"}, {src:"/images/Casecontent/case_girltalk/merch_product_open.jpg", caption:"Brochure med konceptbeskrivelse udfoldet"}, {src:"/images/Casecontent/case_girltalk/presentation.jpg", caption:"Præsentation"}]
   },
+  {
+    id: 4,
+    date: "13. June '25",
+    title: "DN UDESKOLE",
+    client: "Danmarks Naturfredningsforening",
+    blurp: "Et app der fremmer naturlæring og leg til børn som sociale",
+    description: "Konceptet “DN UDESKOLE” er en mobilapp, der gennem diverse aktiviteter i naturen skal opfordre børn til at lære om naturen gennem intuitiv læring med venner og familie",
+    processdescription: "Gennem Double diamond modellen og dens 4 faser, fra Discover helt til Deliver - Via desk research, ekspert interview og flere brugerinterviews, kom jeg frem til at den måde børn lærer om naturen er bedst, hvis det i fællesskab med venner og familie. For at udvikle appen, arbejde jeg divergent med prototypen og anvendte også Design Sprint til at udarbejde den. En af opgaverne bygger endda på AR teknologi",
+    image: "/images/Casecontent/case_dn_udeskole/logo_dn.png",
+    images: [{src:"/images/Casecontent/case_dn_udeskole/Home.png", caption: "Hjemmeskærm"}, {src:"/images/Casecontent/case_dn_udeskole/Selve jagten 2.png", caption: "Klaret udfordringer"}, {src:"/images/Casecontent/case_dn_udeskole/Lyt efter.png", caption: "Lytte opgave"}, {src:"/images/Casecontent/case_dn_udeskole/Find med kamera.png", caption: "AR kamera opgave"} ]
+  },
 ];
