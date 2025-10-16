@@ -101,6 +101,7 @@ section.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 @media (max-width: 500px) {
   
 :root {
@@ -121,4 +122,5 @@ section.visible {
   box-sizing: border-box;
 }
 
+}
 }
