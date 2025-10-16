@@ -71,5 +71,15 @@ export const  cases = [
     processdescription: "Gennem Double diamond modellen og dens 4 faser, fra Discover helt til Deliver - Via desk research, ekspert interview og flere brugerinterviews, kom jeg frem til at den måde børn lærer om naturen er bedst, hvis det i fællesskab med venner og familie. For at udvikle appen, arbejde jeg divergent med prototypen og anvendte også Design Sprint til at udarbejde den. En af opgaverne bygger endda på AR teknologi",
     image: "/images/Casecontent/case_dn_udeskole/logo_dn.png",
     images: [{src:"/images/Casecontent/case_dn_udeskole/Home.png", caption: "Hjemmeskærm"}, {src:"/images/Casecontent/case_dn_udeskole/Selve jagten 2.png", caption: "Klaret udfordringer"}, {src:"/images/Casecontent/case_dn_udeskole/Lyt efter.png", caption: "Lytte opgave"}, {src:"/images/Casecontent/case_dn_udeskole/Find med kamera.png", caption: "AR kamera opgave"} ]
+  },  {
+    id: 5,
+    date: "10. Oct '25",
+    title: "Check ind, check ud, check fordele",
+    client: "Accenture Song for DSB",
+    blurp: "En todelt kampagnestrategi, og små ændringer der tydeliggør poiint hos eksisterende DSB app",
+    description: "Konceptet synliggør point, som en rejsende optjener ved at bruge DSB appen og gør rejsende opmærksom gennem guerilla marketing, ved brug af nye førelinjer som msættes op på perronerne.",
+    processdescription: "Gennem Double diamond modellen og dens 4 faser, fra Discover til Deliver - Via desk research, feltobservationer og flere brugerinterviews, kom vi frem til at DSB nuværende fysiske reklamemateriale ikke fanger rejsendes opmærksomhed. Vores løsning, en guerilla marketing kampagne - gør brug af nye førelinjer, som ses på perronerne og før dem hen til en reklamedisplay, der tydeliggør hvor pointene kan opnås og indløses på hvad.",
+    image: "/image/Casecontent/case_dsbxaccenture/model_af_positionering.png",
+    images: [{src:"/images/Casecontent/case_dsbxaccenture/eksempelreklame.png", caption: "Eksempel på fysisk reklamekampagne på S-tog perron"}, {src:"/images/Casecontent/case_dsbxaccenture/customer_journey.png", caption: "Fremtidig kunderejse ved brug af app"}, {src:"/images/Casecontent/case_dsbxaccenture/Koncept_point_Landing_page.png", caption: "DSB forside med tydelige point angivelse"}, {src:"/images/Casecontent/case_dsbxaccenture/Plus_menupunkt.png", caption: "Seperat plus menu underside, hvor man tydeligt ser fordele og rabatter, som kan indløses med appen."} ]
   },
 ];
