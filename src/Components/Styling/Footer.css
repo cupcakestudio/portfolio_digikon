@@ -5,7 +5,11 @@
     margin: 0 auto;
     justify-content: center;
     place-items: center;
-    border-bottom: #888 1px solid;}
+    border-bottom: #888 1px solid;
+    gap:5%;
+   }
+  
+
     @media (max-width: 500px) {
        .footer {
 
