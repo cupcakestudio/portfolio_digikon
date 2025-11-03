@@ -81,5 +81,26 @@ export const  cases = [
     processdescription: "Gennem Double diamond modellen og dens 4 faser, fra Discover til Deliver - Via desk research, feltobservationer og flere brugerinterviews, kom vi frem til at DSB nuværende fysiske reklamemateriale ikke fanger rejsendes opmærksomhed. Vores løsning, en guerilla marketing kampagne - gør brug af nye førelinjer, som ses på perronerne og før dem hen til en reklamedisplay, der tydeliggør hvor pointene kan opnås og indløses på hvad.",
     image: "/image/Casecontent/case_dsbxaccenture/model_af_positionering.png",
     images: [{src:"/images/Casecontent/case_dsbxaccenture/eksempel_reklame.png", caption: "Eksempel på fysisk reklamekampagne på S-tog perron"}, {src:"/images/Casecontent/case_dsbxaccenture/customer_journey.png", caption: "Fremtidig kunderejse ved brug af app"}, {src:"/images/Casecontent/case_dsbxaccenture/Koncept_point_Landing_page.png", caption: "DSB forside med tydelige point angivelse"}, {src:"/images/Casecontent/case_dsbxaccenture/Plus_menupunkt.png", caption: "Seperat plus menu underside, hvor man tydeligt ser fordele og rabatter, som kan indløses med appen."} ]
+  },  {
+    id: 6,
+    date: "02. Nov '25",
+    title: "Comfundy - Webshop",
+    client: "Skoleprojeekt",
+    blurp: "Comfundy er en fiktiv forretning med tilhørende webshop, der sælger undertøj til familier. Webshoppen er opbygget ed 4 basic og diverse CRO elementer",
+    description: "En opgave der omhandlede at anvende 4 basic elementer til at drive konveteringsoptimering, vha. psykologiske triggers og tillidsmarkører i en webshop man har bygget.",
+    processdescription: "Comfundy blev udarbejdet på baggrund af 4 basics CRO elementer, diverse psykologiske triggers og tilildsmarkører og en forståelse for hvad der gør en webshop succesfuld gennem disse værktøjer. Til webshoppen skulle man have en forretningside klar, og en defineret målgruppe ",
+    image: "/image/Casecontent/case_comfundy/Hero.png",
+    images: [{src:"/images/Casecontent/case_comfundy/Category.png", caption: "Kategori afsnit af webshoppen"}, {src:"/images/Casecontent/case_comfundy/Comfundy_logo.png", caption: "Webshop og Forretning"}, {src:"/images/Casecontent/case_comfundy/Product-overview.png", caption: "Produkt oversigt på forsiden"}, {src:"/images/Casecontent/case_comfundy/Product-page.png", caption: "Produkt siden med underbukser"}, {src:"/images/Casecontent/case_comfundy/CRO elementer i 4 basics.png", caption: "CRO elementer i en 4 basics model"} ]
   },
+  /*  {
+    id: 7,
+    date: "07. Nov '25",
+    title: "Datavisualisering - valgfag",
+    client: "Chiva Roasters",
+    blurp: "Ved hjælp af Datavisualiseringsværktøjet, Tableau har jeg udformet et dashboard til Kafferisteriet [....]",
+    description: "En opgave der omhandlede at anvende 4 basic elementer til at drive konveteringsoptimering, vha. psykologiske triggers og tillidsmarkører i en webshop man har bygget.",
+    processdescription: "Comfundy blev udarbejdet på baggrund af 4 basics CRO elementer, diverse psykologiske triggers og tilildsmarkører og en forståelse for hvad der gør en webshop succesfuld gennem disse værktøjer. Til webshoppen skulle man have en forretningside klar, og en defineret målgruppe ",
+    image: "/image/Casecontent/case_comfundy/Hero.png",
+    images: [{src:"/images/Casecontent/case_comfundy/Category.png", caption: "Kategori afsnit af webshoppen"}, {src:"/images/Casecontent/case_comfundy/Comfundy_logo.png", caption: "Webshop og Forretning"}, {src:"/images/Casecontent/case_comfundy/Product-overview.png", caption: "Produkt oversigt på forsiden"}, {src:"/images/Casecontent/case_comfundy/Product-page.png", caption: "Produkt siden med underbukser"}, {src:"/images/Casecontent/case_comfundy/CRO elementer i 4 basics.png", caption: "CRO elementer i en 4 basics model"} ]
+  }, */
 ];
